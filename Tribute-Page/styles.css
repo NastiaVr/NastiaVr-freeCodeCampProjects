@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    --QuicksandFont: 'Quicksand', sans-serif;
+    --fontColor: #454141;
+}
+
+.main {
+    background-color: #f8f6f6;
+}
+
+.title {
+    font-family: var(--QuicksandFont);
+    font-weight: 700;
+    font-size: 31px;
+    line-height: 34px;
+    color: var(--fontColor);
+    text-align: center;
+    margin: 0 auto;
+}
+
+.portrait {
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    padding: 0 0 10px;
+    border-radius: 15%;
+}
+
+.img-caption {
+    font-family: var(--QuicksandFont);
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 13px;
+    color: var(--fontColor);
+}
+
+.tribute-info {
+    padding: 0 20px 20px;
+    display: grid;
+    grid-gap: 20px;
+}
+
+.info {
+    margin: 0;
+    font-family: var(--QuicksandFont);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--fontColor);
+    text-align: justify;
+}
+
+.link-to-wiki {
+    font-family: var(--QuicksandFont);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: var(--fontColor);
+}
+
+@media screen and (max-width: 360px) {
+    .title {
+        padding: 10px 20px 0;
+    }
+    .portrait {
+        padding: 20px;
+    }
+}
