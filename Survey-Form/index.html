@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Asap:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="main">
+        <h1 id="title" class="title">Environmental issues survey</h1>
+        <p id="description" class="description">This survey was created by environmentalists to make the earth a habitable place for generations to come.</p>
+        <form id="survey-form" class="survey-form">
+            <label for="name" id="name-label" class="label-indent">Your name</label>
+            <input type="text" id="name" name="name" placeholder="enter your name" required class="input-indent input-color">
+            <label for="email" id="email-label" class="label-indent">Your email</label>
+            <input type="email" name="email" id="email" placeholder="enter your email" required class="input-indent input-color">
+            <label for="number" id="number-label" class="label-indent">On a scale of 1-10, please rate how environmental pollution affects your personal health and safety where 1 affects you the least and 10 affects you the most</label>
+            <input type="number" name="number" id="number" min="1" max="10" placeholder="rate how environmental pollution affects your" required class="input-indent input-color">
+            <label for="dropdown" id="dropdown-label" class="label-indent">Which of the following do you think impact and are the biggest causes of environmental pollution?</label>
+            <select id="dropdown" name="dropdown" placeholder="enter the biggest causes of environmental pollution" class="input-indent input-color">
+                <option value="Industrial activities">Industrial activities</option>
+                <option value="Plastic consumption">Plastic consumption</option>
+                <option value="Population overgrowth">Population overgrowth</option>
+                <option value="Dumping solid waste">Dumping solid waste</option>
+                <option value="Vehicles, trains, ships and planes">Vehicles, trains, ships and planes</option>
+                <option value="Combustion of fossil fuels">Combustion of fossil fuels</option>
+            </select>
+            <fieldset class="input-indent survey-fieldset">
+                <legend class="label-indent">Which of the following do you think impact and are the biggest causes of environmental pollution?</legend>
+                <label><input type="checkbox" name="biggest-pollution" id="industrial-activities" value="industrial-pollution"> Industrial activities</label>
+                <label><input type="checkbox" name="biggest-pollution" id="dumping-solid-waste" value="dumping-solid-waste"> Dumping solid waste</label>
+                <label><input type="checkbox" name="biggest-pollution" id="plastic-consumption" value="plastic-consumption"> Plastic consumption</label>
+                <label><input type="checkbox" name="biggest-pollution" id="rapid-urbanization" value="rapid-urbanization"> Rapid urbanization</label>
+            </fieldset>
+            <fieldset class="input-indent survey-fieldset">
+                <legend class="label-indent">Which of the following do you think affect you the most?</legend>               
+                <label><input type="radio" name="pollution-effect" id="air-pollution" value="air-pollution"> Air pollution</label>
+                <label><input type="radio" name="pollution-effect" id="sound-pollution" value="sound-pollution"> Sound pollution</label>
+                <label><input type="radio" name="pollution-effect" id="water-pollution" value="water-pollution"> Water pollution</label>
+                <label><input type="radio" name="pollution-effect" id="soil-pollution" value="soil-pollution"> Soil pollution</label>
+            </fieldset>
+            <label for="comments" class="label-indent">Is there any other feedback that you would like to provide?</label>
+            <textarea id="comments" class="input-indent comments input-color"></textarea>
+            <button id="submit" class="survey-form-button">Send now</button>
+        </form>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

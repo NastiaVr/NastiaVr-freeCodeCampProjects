@@ -1,0 +1,76 @@
+body {
+    margin: 0 auto;
+     background-image: url(https://smartbuildingsmagazine.com/imager/news/103090/Air_comparison_46527c80523046a5c0b3b8e30581599a.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: auto;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+p {
+    margin: 0;
+}
+.main{
+    font-family: 'Asap', sans-serif;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+    color: #4d0e0e;
+    background-color: rgba(232, 199, 180, 0.85);
+    margin: 0 auto;
+    padding: 40px;
+    max-width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+}
+.title{
+    align-self: center;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0;
+}
+.description{
+    padding: 20px 0;
+}
+.survey-form{
+    display: flex;
+    flex-direction: column;
+}
+.label-indent{
+    padding: 0 0 5px;
+}
+.input-indent{
+    padding: 8px;
+    margin: 0 0 15px;
+}
+.input-color{
+    color: #8b8787;
+    font-family: 'Asap', sans-serif;
+}
+.survey-fieldset{
+    padding: 0;
+    border: none;
+    display: flex;
+    flex-direction: column;
+}
+.comments {
+    resize: vertical;
+}
+.survey-form-button{
+    width: 150px;
+    align-self: center;
+    padding: 11px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: #ff9f00;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Asap', sans-serif;
+    text-transform: uppercase;
+}
