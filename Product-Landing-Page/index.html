@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
     <script src="https://use.fontawesome.com/7e9acfbe2b.js"></script>
 </head>
-<body>
+<body id="home">
     <header id="header" class="header">
         <div class="logo">
             <img id="header-img" class="header-img" src="./assets/Logo.png">
@@ -45,21 +45,55 @@
     </header>
     <section class="slider" id="slider">
         <div class="slider-page-1">
-            <h1 class="slider-page-1 title">Simple, Beautiful <b>and Amazing</b></h1>
-           <p class="slider-page-1 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nisi fringilla lacinia. Nullam pulvinar sollicitudin velit id laoreet. Quisque non rhoncus sem.</p> 
-            <div class="slider-page-1 slider-buttons">
+            <h1 class="title">Simple, Beautiful <b>and Amazing</b></h1>
+           <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget nunc vitae tellus luctus ullamcorper. Nam porttitor ullamcorper felis at convallis. Aenean ornare vestibulum nisi fringilla lacinia. Nullam pulvinar sollicitudin velit id laoreet. Quisque non rhoncus sem.</p>
+            <div class="slider-buttons">
                 <a class="slider-button-1"><span>DOWNLOAD</span></a>
                 <a class="slider-button-2"><span>LEARN MORE</span></a>
             </div>
-            <div class="slider-page-1 slider-aplication-buttons">
+            <div class="slider-aplication-buttons">
                 <p class="slider-aplication-text">Available on :</p>
-                <i class="fab fa-apple aplication-button-icon-1"></i>
-                <i class="fab fa-android aplication-button-icon-2"></i>
+                <i class="fab fa-apple aplication-button-icon aplication-button-icon-1"></i>
+                <i class="fab fa-android aplication-button-icon aplication-button-icon-2"></i>
             </div>
         </div>
         <div class="slider-nav-button" id="slider-nav-button">
-            <i class="fas fa-chevron-left"></i>
-            <i class="fas fa-chevron-right"></i>
+            <span class="slider-nav-button-left slider-nav-button-item"><i class="fas fa-chevron-left"></i></span>
+            <span class="slider-nav-button-right slider-nav-button-item"><i class="fas fa-chevron-right"></i></span>
+        </div>
+    </section>
+    <section class="features" id="features">
+        <h2 class="features-title"><b>summarise the features</b></h2>
+        <p class="features-subtitle">summarise what your product is all about </p>
+        <div class="features-items">
+            <figure class="features-item">
+                <p class="features-item-image"><img src="./assets/feature-1.png" alt="Attractive Layout"></p>
+                <figcaption class="image-description">
+                    <p class="image-description-title"><b>Attractive Layout</b></p>
+                    <p class="image-description-text">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                </figcaption>
+            </figure>
+            <figure class="features-item">
+                <p class="features-item-image"><img src="./assets/feature-2.png" alt="Fresh Design"></p>
+                <figcaption class="image-description">
+                    <p class="image-description-title"><b>Fresh Design</b></p>
+                    <p class="image-description-text">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                </figcaption>
+            </figure>
+            <figure class="features-item">
+                <p class="features-item-image"><img src="./assets/feature-3.png" alt="multipurpose"></p>
+                <figcaption class="image-description">
+                    <p class="image-description-title"><b>multipurpose</b></p>
+                    <p class="image-description-text">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                </figcaption>
+            </figure>
+            <figure class="features-item">
+                <p class="features-item-image"><img src="./assets/feature-4.png" alt="Easy to customize"></p>
+                <figcaption class="image-description">
+                    <p class="image-description-title"><b>Easy to customize</b></p>
+                    <p class="image-description-text">Nunc cursus libero purus ac congue arcu cursus ut sed vitae pulvinar massa idporta nequetiam elerisque mi id faucibus iaculis vitae pulvinar.</p>
+                </figcaption>
+            </figure>
         </div>
     </section>
     <section id="contact"></section>
