@@ -1,0 +1,13 @@
+function sumAll(arr) {
+  let sortArr = arr.slice().sort((a, b) => a - b);
+  let num = sortArr[0];
+  let newArr = [];
+  while(num <= sortArr[1]){
+    newArr.push(num);
+    num++;
+  }
+  return newArr.reduce((acc, num) => {
+    return acc + num;
+  });
+}
+console.log(sumAll([10, 5]));
