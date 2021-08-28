@@ -1,0 +1,13 @@
+function translatePigLatin(str) {
+  let regEx = /^[AEIOU]/i;
+  let regEx2 = /^[B-DF-HJ-NP-TV-Z]*/gi;
+    if (regEx.test(str)){
+      return str + 'way';
+    } else {
+      let trimLetters = str.match(regEx2);
+      let newstr = str.replace(regEx2, '');
+      return newstr + trimLetters + 'ay';
+    }
+}
+
+console.log(translatePigLatin("glove"));

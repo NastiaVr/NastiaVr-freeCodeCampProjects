@@ -1,0 +1,22 @@
+function convertHTML(str) {
+  function replaceMatch(match) {
+    switch(match) {
+      case '&' : match = '&amp;';
+      break;
+      case '<' : match = '&lt;';
+      break;
+      case '>' : match = '&gt;';
+      break;
+      case '"' : match = '&quot;';
+      break;
+      case "'" : match = '&apos;';
+      break;
+    }
+    return match;
+  }
+  let regEx = /[^\s\w]/g;
+  let result = str.replace(regEx, replaceMatch)
+  return result;
+}
+
+console.log(convertHTML("Schindler's List"));

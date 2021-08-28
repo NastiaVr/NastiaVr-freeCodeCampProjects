@@ -1,0 +1,15 @@
+function spinalCase(str) {
+  function toUpper(match) {
+    if(match === "_" || match === " ") {
+      return "-";
+    } else {
+      return "-" + match.toUpperCase();
+    }
+  }
+  let newStr = str.replace(/[A-Z|_|\s]/g, toUpper);
+  let arr = newStr.split("-").filter(item => item !== "").join("-").toLowerCase();
+  console.log(arr)
+  return arr;
+}
+
+spinalCase('AllThe-small Things');

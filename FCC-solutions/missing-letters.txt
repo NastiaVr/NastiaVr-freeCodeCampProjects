@@ -1,0 +1,12 @@
+function fearNotLetter(str) {
+  let alphabet = 'abcdefghijklmnopqrstuvwxyz';
+  let indexOfFirst = alphabet.indexOf(str[0])
+  let indexOfLast = alphabet.indexOf(str[str.length - 1])
+  let newStr = alphabet.slice(indexOfFirst, indexOfLast + 1).split('');
+  if(str === alphabet) {
+    return undefined;
+  }
+  return newStr.filter(el => !str.includes(el)).join('');;
+}
+
+console.log(fearNotLetter("abcf"));
